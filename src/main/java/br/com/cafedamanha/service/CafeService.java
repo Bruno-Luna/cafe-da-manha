@@ -21,10 +21,10 @@ public class CafeService {
 	private CafeRepository cafeRepository;
 	
 	public Optional<Object> cadastrarCafe(CafeModel cafeCadastrar) {
-		return cafeRepository.findByCpf(cafeCadastrar.getCpf()).map(usuarioExistente -> {
-			return Optional.empty();
-		}).orElseGet(() -> {
-			cafeCadastrar.setCpf(cafeCadastrar.getCpf());
+//		return cafeRepository.findByCpf(cafeCadastrar.getCpf()).map(usuarioExistente -> {
+//			return Optional.empty();
+//		}).orElseGet(() -> {
+//			cafeCadastrar.setCpf(cafeCadastrar.getCpf());
 			
 		return cafeRepository.findByCafe(cafeCadastrar.getCafe()).map(usuarioExistente -> {
 			return Optional.empty();
@@ -32,6 +32,6 @@ public class CafeService {
 			cafeCadastrar.setCafe(cafeCadastrar.getCafe());
 			return Optional.ofNullable(cafeRepository.save(cafeCadastrar));
 			});
-		});
+		//});
 	}
 }

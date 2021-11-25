@@ -6,6 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 
+import org.hibernate.annotations.NaturalId;
 import org.hibernate.validator.constraints.br.CPF;
 
 /**
@@ -23,8 +24,8 @@ public class CafeModel {
 	@NotBlank(message = "Campo obrigatório.")
 	private String nome;
 	
-	@CPF
-	@NotBlank(message = "Campo obrigatório.")
+	@CPF //Faz com que o CPF válido.  
+	@NaturalId //Faz com que o CPF seja unico. 
 	private String cpf;
 	
 	@NotBlank(message = "Campo obrigatório.")
