@@ -25,7 +25,7 @@ public class CafeModel {
 	private String nome;
 	
 	@CPF //Faz com que o CPF válido.  
-	@NaturalId //Faz com que o CPF seja unico. 
+	//@NaturalId Faz com que o CPF seja unico. 
 	private String cpf;
 	
 	@NotBlank(message = "Campo obrigatório.")

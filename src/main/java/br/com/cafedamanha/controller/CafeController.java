@@ -76,7 +76,7 @@ public class CafeController {
 	public ResponseEntity<Object> salvarCafe(@Valid @RequestBody CafeModel novoCafe) {
 		return cafeService.cadastrarCafe(novoCafe).map(resp -> ResponseEntity.status(201).body(resp))
 				.orElseThrow(() -> {
-					throw new ResponseStatusException(HttpStatus.BAD_REQUEST,
+					throw new ResponseStatusException(HttpStatus.UNAUTHORIZED,
 							"CPF ou Café existente!.");
 				});
 }
@@ -86,7 +86,7 @@ public class CafeController {
 		return ResponseEntity.status(202).body(cafeRepository.save(cafeUpdate)); 
 	}
 	
-	@DeleteMapping("deletar/{id}")
+	@DeleteMapping("/deletar/{id}")
     public void deletarCafe(@PathVariable(value = "id") Long id) {
 		cafeRepository.deleteById(id);
     }
