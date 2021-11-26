@@ -1,0 +1,14 @@
+.bg-secondary{
+    opacity: .7;
+    
+}
+
+.home{
+    display: flex;
+}
+
+a > span, li > a{
+    font-weight: 500;
+}
+
+
