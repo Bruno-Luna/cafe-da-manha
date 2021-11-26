@@ -1,0 +1,23 @@
+<div class="content" style="width: 88vw;">
+    <div class="card mt-3">
+        <h3 class="card-header text-center mt-3">Excluir café</h3>
+    </div>
+    <div class="container-input d-flex flex-column mt-5">
+
+        <input type="text" [(ngModel)]="cafe.nome" class=" mb-3" name="nome" placeholder="Nome:" disabled>
+
+        <input type="text" [(ngModel)]="cafe.cpf"  class=" mb-3" name="cpf" placeholder="CPF:" disabled>
+
+        <input type="text" [(ngModel)]="cafe.cafe" class=" mb-3" name="cafe" placeholder="Café:" disabled>
+
+        <div class="btn">
+            <button class="btn btn-danger  fs-5 text-white ms-3"(click)='removeCafe()'>
+               Excluir
+            </button>
+    
+            <button class="btn btn-secondary fs-5 text-white" routerLink='/cafe'>
+                Cancelar
+            </button>
+        </div>
+    </div>
+</div>
