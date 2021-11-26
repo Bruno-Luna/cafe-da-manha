@@ -1,0 +1,9 @@
+h1{
+    font-weight: 300;
+}
+
+img{
+    position: relative;
+    left: 20px;
+    bottom: 6px;
+}
