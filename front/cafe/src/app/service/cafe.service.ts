@@ -13,22 +13,22 @@ export class CafeService {
   ) { }
 
     postCafe(cafe: CafeModel): Observable<CafeModel>{
-      return this.http.post<CafeModel>('http://localhost:8080/api/v1/cafe/cadastrar', cafe)
+      return this.http.post<CafeModel>('https://luna-cafe.herokuapp.com/api/v1/cafe/cadastrar', cafe)
     }
 
     readCafe(): Observable<CafeModel[]>{
-      return this.http.get<CafeModel[]>('http://localhost:8080/api/v1/cafe/listartodos')
+      return this.http.get<CafeModel[]>('https://luna-cafe.herokuapp.com/api/v1/cafe/listartodos')
     }
 
     findByIdCafe(id: number): Observable<CafeModel>{
-      return this.http.get<CafeModel>(`http://localhost:8080/api/v1/cafe/id/${id}`)
+      return this.http.get<CafeModel>(`https://luna-cafe.herokuapp.com/api/v1/cafe/id/${id}`)
     }
 
     updateCafe(cafe: CafeModel): Observable<CafeModel>{
-      return this.http.put<CafeModel>('http://localhost:8080/api/v1/cafe/atualizar', cafe)
+      return this.http.put<CafeModel>('https://luna-cafe.herokuapp.com/api/v1/cafe/atualizar', cafe)
     }
 
     deleteCafe(id: number): Observable<CafeModel>{
-      return this.http.delete<CafeModel>(`http://localhost:8080/api/v1/cafe/id/${id}`)
+      return this.http.delete<CafeModel>(`https://luna-cafe.herokuapp.com/api/v1/cafe/deletar/${id}`)
     }
 }
