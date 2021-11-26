@@ -1,0 +1,24 @@
+.container-input{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.card{
+    width: 100%;
+    margin-left: .8rem;
+    margin-top: .8rem;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 72%);
+}
+
+
+
+input{
+    height: 3rem;
+    font-size: 1.12rem;
+    border-radius: 8px;
+}
+
+button{
+    float: right;
+}
+
