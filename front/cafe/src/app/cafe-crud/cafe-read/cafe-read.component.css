@@ -1,7 +1,64 @@
+
+.table{
+    width: 88vw;
+    
+}
+
 table{
     text-align: center;
+
 }
 
 table tbody tr {
     font-size: 1.1rem;
+
+}
+
+table tbody tr td{
+    position: relative;
+
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .table{
+        width: 58vw;
+        margin-bottom: 1rem;
+
+    }
+
+    table thead{
+        display: none;
+        
+    }
+
+    table tbody{
+        border: 1px solid hsl(0, 0%, 72%);
+        box-shadow: 2px 2px 5px hsl(0, 0%, 72%);
+
+    }
+
+    table tbody tr {
+        margin-bottom: 16px;
+        display: block;
+        font-size: .96rem;
+
+    }
+    
+    table tbody tr td{
+        display: block;
+        text-align: right;
+        border-bottom: none;
+    }
+
+    table tbody tr td:before{
+        content: attr(data-title);
+        position: absolute;
+        left: 5px;
+        display: block;
+        font-weight: 500;
+
+    }
+
 }

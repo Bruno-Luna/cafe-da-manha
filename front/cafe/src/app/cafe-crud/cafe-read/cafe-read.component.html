@@ -1,27 +1,27 @@
-<table class="table table-hover m-3" style="width: 86vw;">
-    <thead>
-      <tr>
-        <th scope="col">ID</th>
-        <th scope="col">Nome</th>
-        <th scope="col">CPF</th>
-        <th scope="col">Café</th>
-        <th scope="col">Ações</th>
-      </tr>
-    </thead>
-    <tbody *ngFor="let item of cafe" >
-      <tr>
-        <th>{{ item.id }}</th>
-        <td>{{ item.nome }}</td>
-        <td>{{ item.cpf }}</td>
-        <td>{{ item.cafe }}</td>
-        <td>
-          <a routerLink="/cafe/update/{{ item.id }}">
-            <img src="https://cdn-icons-png.flaticon.com/512/84/84380.png" height="20px" class="ms-2" alt="">
-          </a>
-          <a routerLink="/cafe/delete/{{ item.id }}">
-            <img src="https://cdn-icons-png.flaticon.com/512/73/73806.png" height="20px" class="ms-2" alt="">
-          </a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<table class="table table-hover m-3">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nome</th>
+      <th scope="col">CPF</th>
+      <th scope="col">Café</th>
+      <th scope="col">Ações</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let item of cafe">
+    <tr>
+      <td data-title="ID">{{ item.id }}</td>
+      <td data-title="Nome:">{{ item.nome }}</td>
+      <td data-title="CPF:">{{ item.cpf }}</td>
+      <td data-title="Café:">{{ item.cafe }}</td>
+      <td>
+        <a routerLink="/cafe/update/{{ item.id }}">
+          <img src="https://cdn-icons-png.flaticon.com/512/84/84380.png" height="21rem" class="ms-2" alt="">
+        </a>
+        <a routerLink="/cafe/delete/{{ item.id }}">
+          <img src="https://cdn-icons-png.flaticon.com/512/73/73806.png" height="21rem" class="ms-2" alt="">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
