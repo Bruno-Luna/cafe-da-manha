@@ -1,16 +1,14 @@
-.container-input{
-    width: 60%;
-    margin: 0 auto;
-}
-
 .card{
-    width: 100%;
+    width: 88vw;
     margin-left: .8rem;
     margin-top: .8rem;
     box-shadow: 2px 2px 5px hsl(0, 0%, 72%);
 }
 
-
+.container-input{
+    width: 60%;
+    margin: 0 auto;
+}
 
 input{
     height: 3rem;
@@ -20,5 +18,32 @@ input{
 
 button{
     float: right;
+
 }
 
+button:nth-child(1){
+    margin-left: 1rem;
+}
+
+div.btn{
+    padding-right: 0;  
+}
+
+@media only screen and (max-width: 600px) {
+    .card{
+        width: 58vw; 
+    }
+
+    .container-input{
+        width: 82%;
+    }
+
+    div.btn{
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+        padding-left: 0;
+        padding-right: 0;  
+    }
+
+}
