@@ -45,4 +45,8 @@ div.btn{
         padding-right: 0;  
     }
 
+    button:nth-child(1){
+        margin-left: 0;
+    }
+
 }

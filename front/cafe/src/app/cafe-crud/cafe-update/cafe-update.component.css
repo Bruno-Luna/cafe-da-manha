@@ -44,5 +44,9 @@ div.btn{
         padding-left: 0;
         padding-right: 0;   
     }
+    
+    button:nth-child(1){
+        margin-left: 0;
+    }
 
 }
