@@ -30,12 +30,8 @@ div.btn{
 }
 
 @media only screen and (max-width: 600px) {
-    .card{
+    .card, .container-input{
         width: 58vw; 
-    }
-
-    .container-input{
-        width: 82%;
     }
 
     div.btn{
@@ -45,7 +41,7 @@ div.btn{
         padding-left: 0;
         padding-right: 0;  
     }
-    
+
     button:nth-child(1){
         margin-left: 0;
     }

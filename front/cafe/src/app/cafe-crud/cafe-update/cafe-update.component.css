@@ -29,12 +29,8 @@ div.btn{
 }
 
 @media only screen and (max-width: 600px) {
-    .card{
+    .card, .container-input{
         width: 58vw; 
-    }
-
-    .container-input{
-        width: 82%;
     }
 
     div.btn{
