@@ -11,4 +11,18 @@ a > span, li > a{
     font-weight: 500;
 }
 
+.content-nav{
+    width: 10%; 
+    height: 78vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .content-nav{
+        width: 30%;
+        height: auto;
+        min-height: 78vh;
+    
+    }
+
+}
 
