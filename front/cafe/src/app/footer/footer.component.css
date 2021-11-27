@@ -9,3 +9,16 @@ span.nome{
  .coracao{
     color: red;
 }
+
+.content{
+    justify-content: end;
+}
+
+@media only screen and (max-width: 600px) {
+     .content{
+       padding-top: .8rem;
+       justify-content: center;
+       
+    }
+
+}
