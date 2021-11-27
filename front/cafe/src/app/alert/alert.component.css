@@ -1,3 +1,10 @@
+
 .btn-close{
     float: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .alert{
+        text-align: center;
+    }
 }
