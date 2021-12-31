@@ -12,16 +12,14 @@ Preencher os campos; ✔
 
 Este projeto pessoal foi desenvolvido a fim de colocar em prática o que venho estudando nos últimos meses e foi construído com as seguintes ferramentas: #Java, #springboot , #mysql, #Angular, #html, #css, #bootstrap #postman. 
 
-Para as próximas implementações:
+### Próximas implementações:
 
-Melhorar as mensagens do lado do usuário; 🚧
+- Melhorar as mensagens do lado do usuário; 🚧
 
-Responsividade de alguns elementos; 🚧
+ - Responsividade de alguns elementos; 🚧
 
 ### Links:
-Deploy: https://lnkd.in/dQd8DG4J
-
-Github:  https://lnkd.in/duQydkkN
+ - Deploy: https://lnkd.in/dQd8DG4J
 
 ### Preview:
 
